@@ -1,0 +1,22 @@
+# Two-stage pipeline: blocking + feature extraction in C++ (no external
+# libraries, standard library only -- nothing to pip install for that half),
+# model training/inference in Python using LightGBM.
+#
+# Pinned versions used to develop/test this submission (Python 3.12):
+lightgbm==4.7.0
+pandas==3.0.5
+numpy==2.3.4
+
+# Build environment for the C++ half:
+#   - g++ 16.2.0 (MSYS2 MinGW-w64, https://www.msys2.org/)
+#   - CMake 4.4.3
+#   - C++17, -O3 Release build
+# Any C++17-conformant compiler (g++ >= 9, clang++ >= 10, MSVC >= 19.2) and
+# CMake >= 3.15 should work. See README.md for build/run instructions.
+#
+# utils/validate_submission.py (outside this folder) uses only the Python
+# standard library (argparse, csv, os, sys) -- any Python 3.6+ works.
+#
+# All of the above install/build entirely from local packages -- no network
+# access is required at train/inference time, only (optionally) once to
+# `pip install` these pinned packages.

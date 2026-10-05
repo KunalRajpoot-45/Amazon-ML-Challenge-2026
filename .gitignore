@@ -1,0 +1,35 @@
+# ---- Competition dataset (not ours to redistribute, and far too large) ----
+dataset/
+
+# ---- Generated pipeline output (regenerate via the commands in README.md) ----
+code/business_entity_resolution/artifacts/
+output/
+output_variants/
+*_submission.zip
+
+# ---- Build artifacts ----
+code/business_entity_resolution/build/
+code/business_entity_resolution/build2/
+code/business_entity_resolution/build3/
+*.o
+*.obj
+*.exe
+*.a
+
+# ---- Python ----
+__pycache__/
+*.pyc
+*.egg-info/
+.venv/
+venv/
+
+# ---- Editor / OS / tooling ----
+.vscode/
+.idea/
+.claude/
+.DS_Store
+Thumbs.db
+
+# ---- Scratch / staging ----
+_submission_stage/
+*.log

@@ -461,8 +461,3 @@ Ranked by expected payoff:
    Platt scaling per country) would let the model express uncertainty on
    an unfamiliar country more precisely than a single extra threshold can.
 
-## License
-
-No license file is currently included — treat this as "all rights
-reserved" unless/until one is added. The code here is original; LightGBM
-(used as a dependency, not redistributed) is MIT-licensed.
